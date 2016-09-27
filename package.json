@@ -1,0 +1,14 @@
+{
+  "name": "Tasker",
+  "version": "1.0.0",
+  "description": "Scripts for Tasker profiles",
+  "author": "Daniel Matthies <mageluingil@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:MageLuingil/tasker.git"
+  },
+  "dependencies": {
+    "suncalc": "^1.7.0"
+  },
+  "private": true
+}
