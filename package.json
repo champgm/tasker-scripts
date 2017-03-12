@@ -5,7 +5,7 @@
   "author": "Daniel Matthies <mageluingil@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:MageLuingil/tasker.git"
+    "url": "git@github.com:MageLuingil/tasker-scripts.git"
   },
   "scripts": {
       "install": "[ -d tasker-commonjs ] && git -C tasker-commonjs pull || git clone https://github.com/MageLuingil/tasker-commonjs.git"
