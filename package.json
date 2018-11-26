@@ -2,13 +2,9 @@
   "name": "Tasker",
   "version": "1.0.0",
   "description": "Scripts for Tasker profiles",
-  "author": "Daniel Matthies <mageluingil@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:MageLuingil/tasker-scripts.git"
-  },
+  "author": "champgm",
   "scripts": {
-      "install": "[ -d tasker-commonjs ] && git -C tasker-commonjs pull || git clone https://github.com/MageLuingil/tasker-commonjs.git"
+    "install": "[ -d tasker-commonjs ] && git -C tasker-commonjs pull || git clone https://github.com/MageLuingil/tasker-commonjs.git"
   },
   "dependencies": {
     "sprintf-js": "^1.0.3",
