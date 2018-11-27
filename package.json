@@ -6,9 +6,6 @@
   "scripts": {
     "install": "[ -d tasker-commonjs ] && git -C tasker-commonjs pull || git clone https://github.com/MageLuingil/tasker-commonjs.git"
   },
-  "dependencies": {
-    "sprintf-js": "^1.0.3",
-    "suncalc": "^1.7.0"
-  },
+  "dependencies": {},
   "private": true
 }
