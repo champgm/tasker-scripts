@@ -1,0 +1,37 @@
+require('jest');
+const names = require('../../src/common/numbers').names;
+const getNameByNumber = require('../../src/common/numbers').getNameByNumber;
+const lastFourToNameMap = require('../../src/common/numbers').lastFourToNameMap;
+const getNameByContact = require('../../src/common/numbers').getNameByContact;
+
+// const numbers = {
+//   googleVoiceMac: '12512396376',
+//   googleVoiceMacWork: '16282436604',
+//   mavenClxMacAws: '16178550956',
+//   mavenClxMacNgrok: '18338647544',
+//   mavenTwilioDevelop: '14692255698',
+//   mavenTwilioStaging: '12564725569',
+//   mavenTwilioProduction: '77577',
+// };
+
+describe('numbers', () => {
+  describe('getNameByNumber', () => {
+    it("should return the correct value each known number", () => {
+      expect(getNameByNumber('12512396376')).toEqual(names.googleVoiceMac);
+      expect(getNameByNumber('16282436604')).toEqual(names.googleVoiceMacWork);
+      expect(getNameByNumber('16178550956')).toEqual(names.mavenClxMacAws);
+      expect(getNameByNumber('18338647544')).toEqual(names.mavenClxMacNgrok);
+      expect(getNameByNumber('14692255698')).toEqual(names.mavenTwilioDevelop);
+      expect(getNameByNumber('12564725569')).toEqual(names.mavenTwilioStaging);
+      expect(getNameByNumber('77577')).toEqual(names.mavenTwilioProduction);
+    });
+  });
+  describe('getByContactName', () => {
+    it('Should handle all of mac\'s given contact names', () => {
+      expect(getNameByContact('Maven CLX Mac Ngrok')).toEqual(names.mavenClxMacNgrok);
+      expect(getNameByContact('Maven CLX Mac AWS')).toEqual(names.mavenClxMacAws);
+      expect(getNameByContact('Maven Twilio Dev')).toEqual(names.mavenTwilioDevelop);
+      expect(getNameByContact('Maven Twilio Staging')).toEqual(names.mavenTwilioStaging);
+    });
+  });
+});

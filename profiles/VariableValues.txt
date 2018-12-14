@@ -1,0 +1,2 @@
+%CommonJS: /storage/emulated/0/javascript/tasker-scripts/tasker-commonjs/require.js
+%JS_PATH: /storage/emulated/0/javascript/tasker-scripts/src
