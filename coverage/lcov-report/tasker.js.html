@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for tasker.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> tasker.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/115</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/120</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/113</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// v1 tv5.6
+function <span class="fstat-no" title="function not covered" >alarmVol(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >audioRecord(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >audioRecordStop(){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >btVoiceVol(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >browseURL(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >button(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >call(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >callBlock(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >callDivert(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >callRevert(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >callVol(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >carMode(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >clearKey(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >composeEmail(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >composeMMS(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >composeSMS(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >convert(a1,a2){<span class="cstat-no" title="statement not covered" >return ' ';}</span></span>
+function <span class="fstat-no" title="function not covered" >createDir(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >createScene(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >cropImage(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >decryptDir(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >decryptFile(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >deleteDir(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >deleteFile(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >destroyScene(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >disable(){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >displayAutoBright(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >displayAutoRotate(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >displayTimeout(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >dpad(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >dtmfVol(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >elemBackColour(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >elemBorder(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >elemPosition(a1,a2,a3,a4,a5,a6){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >elemText(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >elemTextColour(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >elemTextSize(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >elemVisibility(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >endCall(){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >enableProfile(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >encryptDir(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >encryptFile(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >enterKey(a1,a2,a3,a4,a5,a6,a7){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >exit(){}</span>
+function <span class="fstat-no" title="function not covered" >flash(a1){}</span>
+function <span class="fstat-no" title="function not covered" >flashLong(a1){}</span>
+function <span class="fstat-no" title="function not covered" >filterImage(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >flipImage(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >getLocation(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >getVoice(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return ' ';}</span></span>
+function <span class="fstat-no" title="function not covered" >global(a1){<span class="cstat-no" title="statement not covered" >if(a1=='SDK'||a1=='%SDK'){<span class="cstat-no" title="statement not covered" >return '0';}else{<span class="cstat-no" title="statement not covered" >return ' ';}}</span></span></span></span>
+function <span class="fstat-no" title="function not covered" >goHome(a1){}</span>
+function <span class="fstat-no" title="function not covered" >haptics(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >hideScene(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >listFiles(a1,a2){<span class="cstat-no" title="statement not covered" >return ' ';}</span></span>
+function <span class="fstat-no" title="function not covered" >loadApp(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >loadImage(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >local(a1){<span class="cstat-no" title="statement not covered" >return ' ';}</span></span>
+function <span class="fstat-no" title="function not covered" >lock(a1,a2,a3,a4,a5,a6,a7){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >mediaControl(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >mediaVol(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >micMute(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >mobileData(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >musicBack(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >musicPlay(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >musicSkip(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >musicStop(){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >nightMode(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >notificationVol(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >performTask(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >popup(a1,a2,a3,a4,a5,a6){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >profileActive(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >pulse(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >readFile(a1){<span class="cstat-no" title="statement not covered" >return ' ';}</span></span>
+function <span class="fstat-no" title="function not covered" >reboot(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >resizeImage(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >ringerVol(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >rotateImage(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >saveImage(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >say(a1,a2,a3,a4,a5,a6,a7,a8){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >scanCard(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >sendIntent(a1,a2,a3,a4,a5,a6,a7,a8){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >sendSMS(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >setClip(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >settings(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >setAirplaneMode(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >setAirplaneRadios(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >setAlarm(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >setAutoSync(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >setBT(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >setBTID(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >setGlobal(a1,a2){}</span>
+function <span class="fstat-no" title="function not covered" >setKey(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >setLocal(a1,a2){}</span>
+function <span class="fstat-no" title="function not covered" >setWallpaper(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >setWifi(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >shell(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return ' ';}</span></span>
+function <span class="fstat-no" title="function not covered" >showScene(a1,a2,a3,a4,a5,a6){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >shutdown(){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >silentMode(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >sl4a(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >soundEffects(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >speakerphone(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >statusBar(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >stayOn(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >stopLocation(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >systemLock(){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >systemVol(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >takeCall(){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >takePhoto(a1,a2,a3,a4){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >taskRunning(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >type(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >unzip(a1,a2){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >usbTether(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >vibrate(a1){}</span>
+function <span class="fstat-no" title="function not covered" >vibratePattern(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >wait(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >wifiTether(a1){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >writeFile(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+function <span class="fstat-no" title="function not covered" >zip(a1,a2,a3){<span class="cstat-no" title="statement not covered" >return true;}</span></span>
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Dec 14 2018 12:55:26 GMT-0500 (EST)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
