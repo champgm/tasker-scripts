@@ -4,26 +4,8 @@
   "description": "Scripts for Tasker profiles",
   "author": "champgm",
   "scripts": {
-    "install": "[ -d tasker-commonjs ] && git -C tasker-commonjs pull || git clone https://github.com/MageLuingil/tasker-commonjs.git",
-    "test": "jest"
+    "install": "[ -d tasker-commonjs ] && git -C tasker-commonjs pull || git clone https://github.com/MageLuingil/tasker-commonjs.git"
   },
   "dependencies": {},
-  "private": true,
-  "jest": {
-    "globals": {},
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "src/**/*.js"
-    ],
-    "coverageReporters": [
-      "lcov"
-    ],
-    "coverageDirectory": "coverage",
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "node"
-    ]
-  }
+  "private": true
 }
